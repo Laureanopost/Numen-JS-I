@@ -162,7 +162,7 @@ function operadoresLogicos(num1, num2, num3) {
   } else {
     return false;
   }
-  ssdsds
+
 
 }
 
@@ -172,19 +172,36 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  //let noPrimo = [0, 1, 4]
+  if (numero === 0 || numero === 1 || numero === 4)
+    return false;
+  for (let i = 2; i < numero / 2; i++) {
+    if (numero % i === 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
 }
+
 
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if (valor) {
+    return "Soy verdadero";
+  } else if (!valor) {
+    return "Soy falso"
+  }
 }
 
 function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+  let numMult = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  let resultado = []
 
 }
 
