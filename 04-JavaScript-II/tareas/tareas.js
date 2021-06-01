@@ -162,7 +162,7 @@ function operadoresLogicos(num1, num2, num3) {
   } else {
     return false;
   }
-  ssds
+
 }
 
 function esPrimo(numero) {
