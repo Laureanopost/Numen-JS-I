@@ -161,7 +161,7 @@ function operadoresLogicos(num1, num2, num3) {
     return num3 + 1;
   } else {
     return false;
-  }sdsdsd
+  }
 }
 
 function esPrimo(numero) {
