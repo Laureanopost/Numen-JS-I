@@ -225,7 +225,7 @@ function tieneTresDigitos(numero) {
       return true;
     }*/
 
-    for (i = 0 ; i < numero ; i++) {
+    for (let i = 0 ; i < numero ; i++) {
       if(numero.toString().length === 3) {
         return true;
       }else {
@@ -241,13 +241,16 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  //let i = 0;
-
-  
-  
+  let result = 0;
+  let i = 8 * 5;
+  let n = 1;
+  do {
+      result = numero + i;
+      
+      n = n + 1;
+  } while (n <= 8);
+  return result;
 }
-
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
