@@ -205,7 +205,7 @@ function tablaDelSeis() {
   let tabla = 6;
   let resultados = [];
 
-  for (let i = 0; i < numerosMult.length; i++) {
+  for (let i = 0 ; i < numerosMult.length; i++) {
     resultados.push(numerosMult[i] * tabla);
 
   }
@@ -216,19 +216,34 @@ function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   
-    if(numero <= 99) {
+    /*if(numero <= 99) {
       return false;
     }else if(numero > 999) {
       return false;
+      
     }else if(numero <= 999) {
       return true;
+    }*/
+
+    for (i = 0 ; i < numero ; i++) {
+      if(numero.toString().length === 3) {
+        return true;
+      }else {
+        return false;
+      }
     }
-}
+    
+      
+    }
+    
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  //let i = 0;
+
+  
   
 }
 
